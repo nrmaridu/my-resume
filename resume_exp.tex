@@ -1,0 +1,211 @@
+\documentclass[14pt,a4paper,sans]{moderncv}
+\moderncvstyle{banking}
+\moderncvcolor{black}
+\nopagenumbers{}
+\usepackage[utf8]{inputenc}
+\usepackage{ragged2e}
+\usepackage[scale=0.915]{geometry}
+\usepackage{import}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{tabularx}
+
+\name{Nageswara Rao}{Maridu}
+\newcommand{\projectdesc}[1]{\fontsize{1.2em}{8em}\selectfont #1}
+\newcommand{\project}[5]{
+    \noindent
+    \begin{tabularx}{\textwidth}{Xr}
+    \textbf{#1} & \textit{#2} \\
+    \end{tabularx}
+    #3 \\ % Project description
+    \noindent\textbf{Stack:} #4 % Tech stack in bold
+    \begin{itemize}[label=\textbullet, left=1em] % Solid bullet points and left padding
+    #5 % Responsibilities as bullet points
+    \end{itemize}
+    \vspace{1em} % Add some space after each project
+}
+\newcommand*{\customcventry}[7][.13em]{
+    \begin{tabular}{@{}l}
+    {\bfseries #4} \
+        {\itshape #3}
+    \end{tabular}
+    \hfill
+    \begin{tabular}{l@{}}
+    {\bfseries #5} \
+        {\itshape #2}
+    \end{tabular}
+    \ifx
+        &#7&%
+    \else
+            {\
+        \begin{minipage}{\maincolumnwidth}%
+        \small#7%
+        \end{minipage}}
+    \fi%
+    \par\addvspace{#1}}
+\begin{document}
+    \makecvtitle
+    \vspace*{-17mm}
+    \begin{center}
+        \textbf{ Senior Software Engineer II(Staff)}
+    \end{center}
+    \begin{center}
+        \begin{tabular}{ c c c }
+            \faMobile\enspace +1 587-969-9556& \enspace\faEnvelope\enspace maridu.nageswararao@gmail.com& \enspace\faHome\enspace Calgary, Alberta, Canada\\
+        \end{tabular}
+    \end{center}
+    \begin{center}
+        \begin{tabular}{ c c c }
+            \faLinkedin\enspace \color{blue} \href{https://www.linkedin.com/in/nrmaridu/}{in/nrmaridu} &
+            \enspace \faGithub\enspace \color{blue} \href{https://github.com/nrmaridu}{github.com/nrmaridu} &
+            \enspace \faLanguage\enspace \color{blue} \href{https://www.loc.gov/standards/iso639-2/php/langcodes_name.php?iso_639_1=en}{en},
+            \href{https://www.loc.gov/standards/iso639-2/php/langcodes_name.php?iso_639_1=te}{te}
+        \end{tabular}
+    \end{center}
+    \section{Profile}
+    {Results-oriented and innovative Senior Software Engineer with nearly \textbf{10} years of
+    expertise, specializing in building large scale cloud native SaaS solutions with \textbf{microservices} architecture.
+    Responsible and articulate individual with strengths in System Design, Solution Optimization, Cloud, Microservices architecture and Domain Driven Design.}
+    \vspace{0.5em}
+
+    {Seeking a challenging senior/lead role in distributed system projects where I can utilize my
+    experience to drive innovation and contribute to the success of projects.}
+
+    \section{Areas of Expertise}
+    {Software Development - Distributed Systems - Microservices - Cloud Computing - Object Oriented Design - Concurrent Programming - REST - Event Driven Architecture - IAM - DDD - TDD}
+
+
+    \section{Work Experience}
+
+    \customcventry{Jan 2022 ‐ Present}{{\color{blue}\href{https://www.synopsys.com/}{Synopsys Canada}}}{Staff Software Engineer}{Calgary, AB, Canada}{}{}
+
+    \customcventry{Dec 2016 ‐ Jan 2022}{{\color{blue}\href{https://www.synopsys.com/}{Synopsys India Pvt Ltd}}}{Senior Software Engineer}{Bangalore, KA, India}{}{}
+
+    \customcventry{June 2016 ‐ Nov 2016}{{\color{blue}\href{https://www.synopsys.com/}{Cigital Asia Pvt Ltd (now Synopsys)}}}{Associate Software Engineer}{Bangalore, KA, India}{}{}
+
+    \customcventry{Oct 2014 ‐ May 2016}{{\color{blue}\href{https://atos.net/en/}{Syntel Pvt Ltd  (now Atos)}}}{Application Programmer}{Chennai,TN, India}{}{}
+
+
+    \section{Projects}
+
+    \project{Project Title}{2020-2022}
+    {This is a brief description of the project. It explains the main objectives and outcomes of the project.}
+    {Java, Spring Boot, MySQL, Docker}
+    {
+        \item Developed RESTful APIs using Spring Boot.
+        \item Designed and implemented database schema in MySQL.
+        \item Containerized the application using Docker.
+        \item Collaborated with the frontend team to integrate APIs.
+    }
+
+    \project{Another Project}{2018-2020}
+    {This is another project description. It highlights the key features and achievements of the project.}
+    {Python, Django, PostgreSQL, Kubernetes}
+    {
+        \item Built web applications using Django framework.
+        \item Managed PostgreSQL databases and optimized queries.
+        \item Deployed applications on Kubernetes clusters.
+        \item Automated CI/CD pipelines using Jenkins.
+    }
+
+    % Polaris NG Project
+    \customcventry{01/2022 ‐ present}{{\color{blue}{(Synopsys Canada)}}}{Polaris Nextgen}{}{}{
+            {\projectdesc{Polaris is an integrated, cloud-based SaaS application security testing solution designed specifically for DevSecOps and development teams.
+        I'm the lead developer responsible for design and development of SCM integration, Audit, Notification and IAM microservices for the platform.\newline{}}}
+            {\textbf{Stack: Java, Golang, Spring Boot, Postgres, jOOQ, Rabbit MQ, Redis, Kubernetes, Datadog, RHSSO, Auth0 }
+        }
+            {\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+                 \item hello.
+                 \item Developed and implemented digital marketing strategies that generated over \$850,000 in revenue in 2023
+                 \item Oversee the execution of SEO, SEM, email, social media, and display advertising campaigns, achieving a 12\% decrease in cost per acquisition
+        \end{itemize}}}
+
+    \vspace{1em}
+    \customcventry{01/2017 ‐ 01/2022}{{\color{blue}{(Synopsys India)}}}{Reporting Platform}{}{}{
+            {\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+                 \item Implemented promotional activities such as re-targeting campaigns for e-commerce businesses.
+                 \item Monitored the performance of PPC campaigns through Google Adwords.
+                 \item Managed and optimized PPC campaigns, resulting in a 5\% increase in click-through rates.
+        \end{itemize}}}
+
+    \vspace{1em}
+
+    \customcventry{June 2016 ‐ Feb 2018}{{\color{blue}{(Cigital, Synopsys)}}}{Software Security Applications}{}{}
+    {
+        \vspace{0.5em}
+        {As a Full Stack Developer at Cigital, I contributed to the development of several software security applications, including:}
+        {\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+             \item \textbf{mySSI :} Platform for managing Secure Software Development Lifecycle(SSDLC) activities of software projects.
+             \item \textbf{CEDAR :} A web application for scheduling penetration tests and managing test reports.
+             \item \textbf{Secure Assist :} An on-premise static code analysis platform for softwares.
+        \end{itemize}}
+        {\textbf{Stack: Java, Spring Boot, JSP, MySQL, REST API, JavaScript, Bootstrap, Angular 2+ }}
+        \\
+        {\hspace{1em}\textbf{Key Responsibilities:}}
+        {\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+             \item Designed and developed multiple full-stack applications using a range of technologies..
+             \item Led the transformation of a JavaScript based frontend application to Angular 2+ for a project, while assisting fellow developers in writing efficient and maintainable code.
+             \item Made a significant impact by quickly acquiring expertise in Angular 2+, leveraging it's features and best practices to drive project success.
+             \item Demonstrated expertise in migrating existing authorization model from RBAC to the new PBAC model using spring security framework.
+        \end{itemize}}
+    }
+
+    \vspace{1em}
+    \customcventry{Oct 2014 ‐ May 2016}{{\color{blue}{(Syntel Pvt)}}}{Plan Sponsor Application Suite}{}{}{
+            {In my early years as a software professional, I worked as an outsourced Applications Programmer for Manulife, a Canadian multinational insurance company in modernizing their retirement plan service applications.}
+            {\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+                 \item Enhanced multiple backend applications to improve performance and efficiency..
+                 \item Migrated the legacy HTML/CSS based front-end to a modern Bootstrap 5 based frontend, ensuring a seamless user experience across multiple browsers.
+                 \item Designed multi-browser compatible UI components using JavaScript and jQuery, streamlining the development process.
+                 \item Developed shell scripts and Ant scripts to automate local development processes, significantly increasing developer productivity.
+        \end{itemize}}
+            {This project showcases my early beginnings in the software industry, highlighting my ability to work on diverse tasks, from backend
+        enhancements to frontend migrations, while also demonstrating my passion for process improvement and automation.}
+    }
+
+
+    \section{Education}
+    \customcventry{2008-2014}{\color{blue}\href{https://www.google.com/}{Rajiv Gandhi University of Knowledge Technologies}}{Integrated Dual Degree}{Nuzvid, India}{}{CGPA : 8.15/10}{Bachelor of Technology in Computer Science \& Engineering | Minor in Management Studies.}
+
+    \section{Skills}
+    {\begin{itemize}[label=\textbullet]
+         \itemsep0em
+         \item {\textbf{Java}(primary), \textbf{Golang}, Python, JavaScript}
+         \item {\textbf{PostgreSQL}, MySQL}
+         \item {\textbf{RabbitMQ, Redis, Kubernetes(GCP), Docker, Datadog(Log Monitoring)}}
+         \item {\textbf{REST}, gRPC API development}
+         \item {Event Driven \textbf{Microservices} Development }
+         \item {\textbf{Domain Driven Design}}
+    \end{itemize}}
+
+
+    \section{Achievements}
+    \customcventry{Oct 2023}{{\color{blue}\href{https://www.synopsys.com/}{(Synopsys Inc)}}}{Ace Award}{Calgary, AB, Canada}{}{
+            {Awarded the Ace Award for Outstanding Performance, recognizing my exceptional contributions to the team. Notable achievements include:}
+            {\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+                 \item Rapidly gaining expertise in Audit and Notifications domains, consistently delivering crucial features.
+                 \item Successfully addressing complex consumer issues that significantly contributed to closing major deals.
+                 \item Improving system design to accommodate innovative solutions, ensuring smooth progression of essential functionalities.
+        \end{itemize}}
+        \text{This achievement showcases my ability to adapt quickly, think critically, and drive results.}
+    }
+
+    \vspace{1em}
+
+    \customcventry{Aug 2019}
+    {{\color{blue}\href{https://www.synopsys.com/}{(Synopsys Inc)}}}{Star Award}{Bangalore, KA, India}{}{
+            {Recipient of the Star Award in individual category, recognizing my extraordinary performance in designing and developing the Reporting Platform for Software Security Vulnerabilities. Notable achievements include:}
+            {\begin{itemize}[leftmargin=0.6cm, label={\textbullet}]
+                 \item Played a crucial role in designing and implementing the reporting platform, extracting data from multiple sources using batch pattern within a short span.
+                 \item Demonstrated exceptional expertise and problem-solving skills in integrating diverse data streams to provide actionable insights.
+        \end{itemize}}
+            {This achievement highlights my ability to drive complex projects forward, think creatively, and deliver high-quality results
+        under tight deadlines.}
+    }
+
+\end{document}
+
